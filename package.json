@@ -1,0 +1,47 @@
+{
+  "name": "batchdata-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for BatchData.io property and address APIs",
+  "main": "batchdata_mcp_server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zellerhaus/batchdata-mcp-real-estate.git"
+  },
+  "homepage": "https://github.com/zellerhaus/batchdata-mcp-real-estate#readme",
+  "bugs": {
+    "url": "https://github.com/zellerhaus/batchdata-mcp-real-estate/issues"
+  },
+  "scripts": {
+    "build": "tsc batchdata_mcp_server.ts",
+    "start": "node batchdata_mcp_server.js",
+    "dev": "tsc batchdata_mcp_server.ts && node batchdata_mcp_server.js",
+    "clean": "rm -f batchdata_mcp_server.js",
+    "prebuild": "npm run clean",
+    "check": "tsc --noEmit --skipLibCheck batchdata_mcp_server.ts",
+    "setup": "node -e \"console.log('Run: chmod +x setup.sh && ./setup.sh (Linux/Mac) or setup.bat (Windows)')\""
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "batchdata",
+    "property",
+    "real-estate",
+    "address-verification",
+    "geocoding",
+    "property-search",
+    "claude",
+    "anthropic",
+    "api-integration"
+  ],
+  "author": "Preston Zeller",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
