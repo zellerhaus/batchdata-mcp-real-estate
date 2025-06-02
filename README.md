@@ -174,7 +174,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 ## Support
 
-- **BatchData API**: [Documentation](https://developer.batchdata.com/)) | [Dashboard](https://app.batchdata.com)
+- **BatchData API**: [Documentation](https://developer.batchdata.com/) | [Dashboard](https://app.batchdata.com)
 - **MCP Protocol**: [Documentation](https://modelcontextprotocol.io)
 - **Issues**: [GitHub Issues](https://github.com/zellerhaus/batchdata-mcp-real-estate/issues)
 
