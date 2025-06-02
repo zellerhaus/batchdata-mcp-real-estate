@@ -1,6 +1,6 @@
 # BatchData MCP Server
 
-A Model Context Protocol (MCP) server that integrates with BatchData.io's comprehensive property and address APIs. This server provides access to property data, address verification, geocoding, and advanced property search capabilities.
+A Model Context Protocol (MCP) server that integrates with BatchData.io's comprehensive property and address APIs. This server provides access to property data, address verification, skip tracing, geocoding, and advanced property search capabilities.
 
 ## Features
 
@@ -27,7 +27,7 @@ A Model Context Protocol (MCP) server that integrates with BatchData.io's compre
    ```
 
 3. **Configure your API key**:
-   - Get your API key from [BatchData Settings](https://app.batchdata.com/settings/api)
+   - Get your API key from [BatchData Settings](https://app.batchdata.com/settings/api) or [register here](https://app.batchdata.com/register).
    - Create or update the `.env` file in the project root:
    ```env
    BATCHDATA_API_KEY=your_actual_api_key_here
@@ -174,7 +174,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 ## Support
 
-- **BatchData API**: [Documentation](https://docs.batchdata.com) | [Dashboard](https://app.batchdata.com)
+- **BatchData API**: [Documentation](https://developer.batchdata.com/)) | [Dashboard](https://app.batchdata.com)
 - **MCP Protocol**: [Documentation](https://modelcontextprotocol.io)
 - **Issues**: [GitHub Issues](https://github.com/zellerhaus/batchdata-mcp-real-estate/issues)
 
