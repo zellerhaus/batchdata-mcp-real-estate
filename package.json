@@ -31,7 +31,12 @@
     "property-search",
     "claude",
     "anthropic",
-    "api-integration"
+    "api-integration",
+    "skip-trace",
+    "skiptrace",
+    "contact-information",
+    "market-report",
+    "market-analysis"
   ],
   "author": "Preston Zeller",
   "license": "MIT",
