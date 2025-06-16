@@ -178,6 +178,10 @@ MIT License - See [LICENSE](LICENSE) for details.
 - **MCP Protocol**: [Documentation](https://modelcontextprotocol.io)
 - **Issues**: [GitHub Issues](https://github.com/zellerhaus/batchdata-mcp-real-estate/issues)
 
+<a href="https://glama.ai/mcp/servers/@zellerhaus/batchdata-mcp-real-estate">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@zellerhaus/batchdata-mcp-real-estate/badge" />
+</a>
+
 ---
 
 **Real Estate professionals and developers**: This MCP server enables Claude to access comprehensive property data, perform address verification, and conduct advanced property searches directly through natural language queries.
