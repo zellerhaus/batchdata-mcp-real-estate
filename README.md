@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/zellerhaus-batchdata-mcp-real-estate-badge.png)](https://mseep.ai/app/zellerhaus-batchdata-mcp-real-estate)
+
 # BatchData MCP Server
 
 A Model Context Protocol (MCP) server that integrates with BatchData.io's comprehensive property and address APIs. This server provides access to property data, address verification, skip tracing, geocoding, and advanced property search capabilities.
