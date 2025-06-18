@@ -1,5 +1,7 @@
 # BatchData MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@zellerhaus/batchdata-mcp-real-estate)](https://smithery.ai/server/@zellerhaus/batchdata-mcp-real-estate)
+
 A Model Context Protocol (MCP) server that integrates with BatchData.io's comprehensive property and address APIs. This server provides access to property data, address verification, skip tracing, geocoding, and advanced property search capabilities.
 
 ## Features
@@ -18,6 +20,15 @@ A Model Context Protocol (MCP) server that integrates with BatchData.io's compre
 
 ## Installation
 
+### Installing via Smithery
+
+To install batchdata-mcp-real-estate for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@zellerhaus/batchdata-mcp-real-estate):
+
+```bash
+npx -y @smithery/cli install @zellerhaus/batchdata-mcp-real-estate --client claude
+```
+
+### Manual Installation
 1. **Clone or download this MCP server to your local machine**
 
 2. **Install dependencies**:
