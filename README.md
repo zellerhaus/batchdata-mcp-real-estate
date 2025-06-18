@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/zellerhaus-batchdata-mcp-real-estate-badge.png)](https://mseep.ai/app/zellerhaus-batchdata-mcp-real-estate)
+
 # BatchData MCP Server
 
 [![smithery badge](https://smithery.ai/badge/@zellerhaus/batchdata-mcp-real-estate)](https://smithery.ai/server/@zellerhaus/batchdata-mcp-real-estate)
