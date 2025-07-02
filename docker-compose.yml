@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  batchdata-mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    image: batchdata-mcp-server:latest
+    container_name: batchdata-mcp-server
+    restart: unless-stopped
+    
+    # Environment variables
+    environment:
+      - NODE_ENV=production
+      - BATCHDATA_API_KEY=${BATCHDATA_API_KEY}
+    
+    # Alternative: Use env_file to load from .env
+    env_file:
+      - .env
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "node", "-e", "console.log('Health check')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    
+    # Resource limits (adjust as needed)
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.1'
+          memory: 128M
+    
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+    
+    # If you need to expose a port for debugging/monitoring
+    ports:
+      - "3000:3000"
+    
+    # Stdin/stdout for MCP communication
+    stdin_open: true
+    tty: true
+
+# Optional: Create a network for the MCP server
+networks:
+  default:
+    name: batchdata-mcp-network
