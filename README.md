@@ -70,6 +70,63 @@ chmod +x setup.sh && ./setup.sh
 setup.bat
 ```
 
+## Docker Support
+
+### Quick Start with Docker
+
+1. **Build and test the Docker container:**
+   ```bash
+   chmod +x docker-manage.sh
+   ./docker-manage.sh test
+   ```
+
+2. **Run with Docker Compose:**
+   ```bash
+   ./docker-manage.sh run
+   ```
+
+3. **View logs:**
+   ```bash
+   ./docker-manage.sh logs
+   ```
+
+### Docker Management Commands
+
+The `docker-manage.sh` script provides convenient commands:
+
+- **build**: Build the Docker image
+- **run**: Start with docker-compose
+- **stop**: Stop the service
+- **logs**: View server logs
+- **test**: Build and test the server
+- **clean**: Clean up Docker resources
+- **run-direct**: Run directly with Docker (for testing)
+
+### Manual Docker Usage
+
+**Build the image:**
+```bash
+docker build -t batchdata-mcp-server:latest .
+```
+
+**Run with environment file:**
+```bash
+docker run --rm --env-file .env batchdata-mcp-server:latest
+```
+
+**Run with Docker Compose:**
+```bash
+docker-compose up -d
+```
+
+### Docker Features
+
+- **Multi-stage build** for optimized image size
+- **Non-root user** for enhanced security
+- **Health checks** for monitoring
+- **Resource limits** and logging configuration
+- **Production-ready** with proper signal handling
+
 ## Development Commands
 
 - **Build**: `npm run build` - Compiles TypeScript to JavaScript
@@ -107,6 +164,24 @@ Edit `%APPDATA%\Claude\claude_desktop_config.json`:
     "batchdata": {
       "command": "node",
       "args": ["C:\\path\\to\\batchdata-mcp-real-estate\\batchdata_mcp_server.js"],
+      "env": {
+        "BATCHDATA_API_KEY": "your_api_key_here"
+      }
+    }
+  }
+}
+```
+
+### Docker Configuration for Claude Desktop
+
+If running via Docker, you can configure Claude Desktop to use the containerized server:
+
+```json
+{
+  "mcpServers": {
+    "batchdata": {
+      "command": "docker",
+      "args": ["exec", "-i", "batchdata-mcp-server", "node", "batchdata_mcp_server.js"],
       "env": {
         "BATCHDATA_API_KEY": "your_api_key_here"
       }
